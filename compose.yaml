@@ -7,3 +7,4 @@ services:
       - "8080:5000"
     devices:
       - "/dev/ttyUSB0:/dev/ttyUSB0"
+    restart: always
