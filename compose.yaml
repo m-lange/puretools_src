@@ -1,0 +1,9 @@
+name: puretools
+
+services:
+  srv:
+    build: .
+    ports:
+      - "8080:5000"
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"

@@ -11,7 +11,7 @@ def init_app(app):
 def get_serial():
     if 'serial' not in g:
         g.serial = serial.Serial(
-        port = '/dev/ttyUSB0',
+        port = current_app.config["SERIAL_PORT"],
         baudrate = 9600,
         bytesize = serial.EIGHTBITS,
         parity = serial.PARITY_NONE,

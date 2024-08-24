@@ -4,6 +4,5 @@
 class Config:
     """Set Flask config variables."""
 
-    # General Config
-    STATIC_FOLDER = 'static'
-    TEMPLATES_FOLDER = 'templates'
+    # Serial Config
+    SERIAL_PORT = '/dev/ttyUSB0'
