@@ -59,8 +59,8 @@ def sysinfo():
             sysinfo["manual"] = False
 
         elif line == b'<<MANUAL Switch\r\n':
-            sysinfo["auto"] = True
-            sysinfo["manual"] = False
+            sysinfo["auto"] = False
+            sysinfo["manual"] = True
 
         elif line.startswith(b'<<HDCP'): sysinfo["hdcp"] = line.decode("utf-8").rsplit()[-1] 
         elif line.startswith(b'<<HDMI1'): sysinfo["hdmi1"] = line.decode("utf-8").rsplit()[-1] 
